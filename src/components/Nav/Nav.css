@@ -18,6 +18,11 @@
     text-decoration: none;
 
 }
+
+.header__left .nav__item:hover {
+    background-color: #27272c;
+    color: #9147ff
+}
 .header__right {
     margin-left: auto;
 }

@@ -4,7 +4,10 @@
 
 import "./Nav.css"
 
-function Nav() {
+function Nav(props) {
+
+    const {username, avatar} = props.user
+
     return (
         <header className="header">
             <nav className="header__left">
@@ -14,8 +17,9 @@ function Nav() {
                 <a href="/" className="nav__item">Esports</a>
                 <a href="/" className="nav__item">Music</a>
             </nav>
+
             <nav className="header__right">
-                <span className="user">Keith</span>
+                <img src={avatar} alt="user avatar" />
             </nav>
         </header>
     )
