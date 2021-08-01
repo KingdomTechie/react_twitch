@@ -1,5 +1,7 @@
 import Nav from "./components/Nav/Nav"
+import Home from "./components/Home/Home"
 import './App.css';
+
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Nav user={user}/>
+      <Home/>
     </div>
   );
 }
