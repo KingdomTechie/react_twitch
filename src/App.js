@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Nav user={user}/>
-      <Home/>
+      <Home user={user}/>
     </div>
   );
 }
