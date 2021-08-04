@@ -4,6 +4,7 @@
 
 import "./Nav.css"
 
+// Props is coming from the Parent containter of App.js
 function Nav(props) {
 
     const {username, avatar} = props.user

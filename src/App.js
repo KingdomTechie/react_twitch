@@ -13,6 +13,9 @@ function App() {
 
   return (
     <div className="App">
+
+      {/* IF you want components to share the same data, the parent MUST hold the data, hence the usser object  */}
+
       <Nav user={user}/>
       <Home user={user}/>
     </div>

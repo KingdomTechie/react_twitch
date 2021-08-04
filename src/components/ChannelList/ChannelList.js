@@ -1,10 +1,16 @@
+import ChannelPreview from "../ChannelPreview/ChannelPreview";
+import "./ChannelList.css";
+
+
 // The ChanneList component will contain the list of Channel Previews within the componnent
+// The ChannelList component will also be brought into Home.js
 
-
-import ChannelPreview from "../ChannelPreview/ChannelPreview"
-
+// Props is coming from parent container of Home > ChannelList
 function ChannelList (props) {
 
+    const { header } = props.header
+
+    // The ChannelList holds the data for it's own list.  The (dummy) data is the channels array
     const channels =[
         {
         _id: "abcdedfj123456",
@@ -13,7 +19,7 @@ function ChannelList (props) {
         username: "Asmongold",
         category: "Final Fantasy XIV Online",
         tag: ["English"],
-        previewChannel: "https://static-cdn.jtvnw.net/previews-ttv/live_user_sixy66-440x248.jpg",
+        previewChannel: "https://static-cdn.jtvnw.net/previews-ttv/live_user_summit1g-440x248.jpg",
         viewerCount: 46.8,
         },
         {
@@ -47,9 +53,10 @@ function ChannelList (props) {
 
     return (
         <div className="Channel-List">
-            <h1>{props.header}</h1>
+            {/* Props is coming from the property in ChannelList in Home.js */}
+            <h1>{header}</h1>
 
-            {generateChannels(channels)}
+            <div className="channels">{generateChannels(channels)}</div>
         </div>
     )
 }

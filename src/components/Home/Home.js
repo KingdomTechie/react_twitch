@@ -1,5 +1,6 @@
 import ChannelList from "../ChannelList/ChannelList"
 
+// Props is coming from App.js
 function Home (props) {
 
     const { username, avatar} = props.user

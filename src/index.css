@@ -1,6 +1,23 @@
 /* Cleared out boiler plate CSS */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #0e0e10;
+  color: #e2e2e5;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #3a3a3d;
+  color: #e2e2e5;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
